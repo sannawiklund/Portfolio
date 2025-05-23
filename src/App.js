@@ -12,20 +12,11 @@ export default function App() {
 
         <Hero></Hero>
 
-          <br></br>
-
         <AboutMe></AboutMe>
 
-          <br></br>
-
         <Projects></Projects>
-
-          <br></br>
         
         <Contact></Contact>
-
-          <br></br>
-
 
       </div>
 
