@@ -1,24 +1,14 @@
 import { Component } from 'react';
 import '../ComponentStyling/Contact.css';
 
-
-class Contact extends Component {
-    render() {
-        return (
+function Contact() {
+  return (
             
-            <div className="contactContainer">
+    <div class="sticky top-0 h-[60vh] flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
+        <h2 class="text-4xl font-bold">The Fourth slide</h2>
+    </div>
 
-                <h1>
-                    Wanna Talk?
-                </h1>
-
-                <h1>
-                    React Form Placeholder
-                </h1>
-
-            </div>
-        );
-    }
+  );
 }
 
 export default Contact;

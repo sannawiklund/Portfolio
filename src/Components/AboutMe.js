@@ -1,41 +1,15 @@
 import { Component } from 'react';
 import '../ComponentStyling/AboutMe.css';
 
-class AboutMe extends Component {
-    render() {
-        return (
-            
-            <div className="aboutMeContainer">
+function AboutMe() {
+  return (
 
-                <h1>
-                    About Me
-                </h1>
+    <div class="sticky top-0 h-[60vh] flex flex-col items-center justify-center bg-gradient-to-r from-blue-200 to-cyan-200">
+        <h2 class="text-4xl font-bold">The Second slide</h2>
+        <p class="mt-2">Scroll Down for next slide</p>
+    </div>
 
-                <h1>
-                    Sanna Wiklund
-                </h1>
-
-
-                <h1>
-                    GitHub
-                </h1>
-
-
-                <h1>
-                    Resume
-                </h1>
-
-                <h1>
-                    LinkedIn
-                </h1>
-
-                <h1>
-                    Fullstack Developer | .NET
-                </h1>
-
-            </div>
-        );
-    }
+  );
 }
 
 export default AboutMe;
