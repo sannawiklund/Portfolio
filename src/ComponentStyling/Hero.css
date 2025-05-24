@@ -5,6 +5,14 @@
 .text-base {
     font-family: "Abel", sans-serif;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
+}
+
+.text-base:hover {
+    color: rgb(255, 220, 24);
+}
+
+#navbar {
+    padding-top: 10px;;
 }
