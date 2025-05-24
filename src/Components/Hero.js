@@ -1,6 +1,5 @@
 import React from 'react';
 import '../ComponentStyling/Hero.css';
-import logo from '../Assets/Herologo1.png';
 import BackgroundAnimation from './BackgroundAnimation';
 
 function Hero() {
