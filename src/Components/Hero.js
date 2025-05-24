@@ -1,20 +1,23 @@
-import React from 'react'; 
+import React from 'react';
 import '../ComponentStyling/Hero.css';
 import logo from '../Assets/Herologo1.png';
-import BackgroundAnimation from './BackgroundAnimation'; 
+import BackgroundAnimation from './BackgroundAnimation';
 
 function Hero() {
     return (
-        
-        <div className="sticky top-0 h-[100vh] flex flex-col"> 
+
+        <div className="sticky top-0 h-[100vh] flex flex-col">
 
             <BackgroundAnimation />
 
+            {/* Overlay med vertikala ränder */}
+            <div className="absolute inset-0 z-0 pointer-events-none stripe-overlay"></div>
+
             <div className="relative z-10 w-full h-full flex flex-col items-center justify-center">
 
-                <div className="px-4 mx-auto sm:px-6 lg:px-8 w-full" id = "navbar"> 
-                    <div className="flex items-center justify-center h-16 lg:h-20"> 
-                        
+                <div className="px-4 mx-auto sm:px-6 lg:px-8 w-full" id="navbar">
+                    <div className="flex items-center justify-center h-16 lg:h-20">
+
                         <button type="button" className="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100">
                             <svg className="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 8h16M4 16h16"></path>
@@ -32,14 +35,27 @@ function Hero() {
                     </div>
                 </div>
 
-            
+
                 <div className="sticky top-0 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 flex-grow flex items-center justify-center">
-                    <div>
-                        <img className="w-full" src={logo} alt="Hero Logo" />
+
+                    {/* <div class="bigHeroText">
+
+                        <h1>
+                            SW
+                        </h1>
+                    </div> */}
+
+                    <div className="smallHeroText sticky top-0 ">
+                        <h2>
+                            SANNA WIKLUND
+                        </h2>
                     </div>
+
+
                 </div>
 
             </div>
+            
         </div>
     );
 }
