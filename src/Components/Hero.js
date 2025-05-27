@@ -27,9 +27,9 @@ function Hero() {
                         </button>
 
                         <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10" id="navbar-items">
-                            <a href="#" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> PROJECTS </a>
-                            <a href="#" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> ABOUT ME </a>
-                            <a href="#" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> CONTACT </a>
+                            <a href="#AboutMe" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> ABOUT ME </a>
+                            <a href="#Projects" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> PROJECTS </a>
+                            <a href="#Contact" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> CONTACT </a>
                         </div>
                     </div>
                 </div>
