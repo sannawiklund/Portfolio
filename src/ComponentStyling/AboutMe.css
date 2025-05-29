@@ -1,13 +1,40 @@
 /* About Me Styling */
 
-#name {
+#my-Name {
     color: palevioletred;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
 }
 
-a #title  {
+#about-Me {
+
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+
+}
+
+#my-Title {
+
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+a #title {
     text-transform: capitalize;
 }
 
-#links {
-    
+
+.floating-link {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(240, 135, 184);
+
 }
