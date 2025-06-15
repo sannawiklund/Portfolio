@@ -1,0 +1,28 @@
+.card_Container {
+    /* From https://css.glass
+    background: rgba(255, 255, 255, 0.73);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+h2#project_Title {
+    font-size: 3rem;
+}
+
+.p-carousel .p-carousel-items-content {
+    justify-content: center !important;
+    display: flex !important;
+    align-items: start;
+}
+
+.p-carousel .p-carousel-item {
+    flex: 0 0 auto !important;
+    margin: 0 0.5rem;
+}
+
+.p-carousel .p-carousel-container {
+    overflow: visible !important;
+}

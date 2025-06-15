@@ -19,7 +19,7 @@ function AboutMe() {
 
   return (
 
-    <div className="relative h-screen w-full flex items-center justify-center bg-zinc-950 overflow-hidden px-4" id='background-container'>
+    <div className="sticky top-0 h-screen w-full flex items-center justify-center bg-zinc-950 overflow-hidden px-4" id='background-container'>
 
       <SvgBlob/>
 
