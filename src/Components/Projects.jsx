@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Carousel } from 'primereact/carousel';
 import SvgFlux from './SvgFlux';
 import comingSoon from '../Assets/coming_soon.jpg';
+import '../ComponentStyling/Projects.css';
+
 
 function Projects() {
 
@@ -28,8 +30,8 @@ function Projects() {
 
         <div className="px-6 py-4">
 
-          <div className="mb-2">{item.name}</div>
-          <p className="text-gray-700 text-base">{item.desc}</p>
+          <div className="mb-2" id='project_Name'>{item.name}</div>
+          <p id='project_Desc'>{item.desc}</p>
 
         </div>
 
@@ -48,16 +50,15 @@ function Projects() {
   }, []);
 
   return (
-    <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-pink-100" id="Projects">
-
-      {/* Background SVG effect */}
+    <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-zinc-800" id="Projects">
+      
+      {/* Background SVG effect
       <SvgFlux
         className="absolute inset-0 z-0"
-        gradientRotate="93"
-        stopColor1="hsl(348, 72%, 54%)"
+        gradientRotate="-57"
         stopColor2="hsl(37, 94%, 54%)"
         baseFrequency="0.003 0.003"
-      />
+      /> */}
 
 
       <div className="relative z-10 text-black text-center">
@@ -65,7 +66,7 @@ function Projects() {
       </div>
 
       {/* Carousel wrapper limits overflow and width */}
-      <div className="carousel-wrapper overflow-hidden w-full max-w-[1200px] mx-auto">
+      <div className="carousel-wrapper overflow-hidden w-full max-w-[1235px] mx-auto">
         <Carousel
           key={carouselKey}
           value={projects}
