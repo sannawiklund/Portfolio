@@ -51,13 +51,14 @@ function Projects() {
 
   return (
     <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-zinc-800" id="Projects">
-      {/* Background SVG effect */}
+      
+      {/* Background SVG effect
       <SvgFlux
         className="absolute inset-0 z-0"
         gradientRotate="-57"
         stopColor2="hsl(37, 94%, 54%)"
         baseFrequency="0.003 0.003"
-      />
+      /> */}
 
 
       <div className="relative z-10 text-black text-center">
