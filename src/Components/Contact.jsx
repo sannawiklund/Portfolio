@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react';
-import '../ComponentStyling/Contact.css';
+import ContactForm from './ContactForm';
+
+
 
 function Contact() {
+
+  // Scroll To Top Button
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -21,21 +25,21 @@ function Contact() {
   };
 
   return (
-    <div
-      className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black"
-      id="Contact"
-    >
-      <h2 className="text-4xl font-bold">The Fourth slide</h2>
+    <div>
+      
+      <ContactForm />
 
-      {showButton && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-6 right-3 bg-transparent text-white px-4 py-2 rounded-full shadow-lg border border-white hover:bg-transparent hover:shadow-xl transition-all duration-300"
-        >
-          ↑ Top
-        </button>
+      {
+        showButton && (
+          <button
+            onClick={scrollToTop}
+            className="fixed bottom-6 right-3 bg-transparent text-white px-4 py-2 rounded-full shadow-lg border border-white hover:bg-transparent hover:shadow-xl transition-all duration-300"
+          >
+            ↑ Top
+          </button>
 
-      )}
+        )
+      }
     </div>
   );
 }
