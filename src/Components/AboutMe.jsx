@@ -6,9 +6,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";;
 
-
-
-
 function AboutMe() {
 
   useEffect(() => {
@@ -78,7 +75,7 @@ function AboutMe() {
           </a>
 
           <a
-            href="#"
+            href="/Resume"
             className="floating-link absolute left-1/2 top-0 transform -translate-x-1/2"
             target="_blank"
             rel="noopener noreferrer"
