@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Carousel } from 'primereact/carousel';
 import SvgFlux from './SvgFlux';
 import comingSoon from '../Assets/coming_soon.jpg';
+import k6project from '../Assets/K6ResultComparer.jpg';
 import '../ComponentStyling/Projects.css';
 
 
@@ -12,12 +13,12 @@ function Projects() {
 
   // Sample project data
   const projects = [
-    { img: comingSoon, img_alt: "", name: "Project Name", desc: "Project Coming Soon" },
-    { img: comingSoon, img_alt: "", name: "Project Name", desc: "Project Coming Soon" },
-    { img: comingSoon, img_alt: "", name: "Project Name", desc: "Project Coming Soon" },
-    { img: comingSoon, img_alt: "", name: "Project Name", desc: "Project Coming Soon" },
-    { img: comingSoon, img_alt: "", name: "Project Name", desc: "Project Coming Soon" },
-    { img: comingSoon, img_alt: "", name: "Project Name", desc: "Project Coming Soon" }
+    { img: k6project, img_alt: "", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
+    { img: comingSoon, img_alt: "", name: "Project Name", link: "" },
+    { img: comingSoon, img_alt: "", name: "Project Name", link: "" },
+    { img: comingSoon, img_alt: "", name: "Project Name", link: "" },
+    { img: comingSoon, img_alt: "", name: "Project Name", link: "" },
+    { img: comingSoon, img_alt: "", name: "Project Name", link: "" }
 
   ];
 
@@ -26,12 +27,14 @@ function Projects() {
     <div className='card_Container'>
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
 
-        <img className="w-full h-full" src={item.img} alt={item.img_alt} />
+        <a target="_blank" href={item.link}>
+          <img className="w-full h-full" src={item.img} alt={item.img_alt} />
+        </a>
 
         <div className="px-6 py-4">
 
           <div className="mb-2" id='project_Name'>{item.name}</div>
-          <p id='project_Desc'>{item.desc}</p>
+          {/* <p id='project_Desc'>{item.desc}</p> */}
 
         </div>
 
@@ -51,7 +54,7 @@ function Projects() {
 
   return (
     <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-zinc-800" id="Projects">
-      
+
       {/* Background SVG effect
       <SvgFlux
         className="absolute inset-0 z-0"
