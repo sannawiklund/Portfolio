@@ -14,11 +14,11 @@ function Projects() {
   // Sample project data
   const projects = [
     { img: k6project, img_alt: "", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
-    { img: comingSoon, img_alt: "", name: "Project Name", link: "" },
-    { img: comingSoon, img_alt: "", name: "Project Name", link: "" },
-    { img: comingSoon, img_alt: "", name: "Project Name", link: "" },
-    { img: comingSoon, img_alt: "", name: "Project Name", link: "" },
-    { img: comingSoon, img_alt: "", name: "Project Name", link: "" }
+    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: "" },
+    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: "" },
+    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: "" },
+    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: "" },
+    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: "" }
 
   ];
 

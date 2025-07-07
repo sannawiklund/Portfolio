@@ -4,7 +4,7 @@ import '../ComponentStyling/Resume.css';
 
 function Resume() {
     return (
-        <div className="sticky top-0 h-[100vh] flex flex-col w-500 bg-zinc-800" id="Resume">
+        <div className="flex flex-col w-500 bg-zinc-800" id="Resume">
 
             <div className="inner-Resume-Container max-w-5xl mx-auto px-4">
 

@@ -2,19 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-.text-base {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  color: white;
-}
 
 #navbar {
   padding-top: 10px;
 }
 
+#navbar-items a {
+  color: white;
+}
+
+#navbar-items a:hover {
+  color: rgb(255, 210, 85);
+}
+
 .bigHeroText {
-  font-family: "Roboto Mono", monospace;
   font-size: 30rem;
   font-weight: 300;
   z-index: -1;
@@ -22,7 +23,6 @@
 }
 
 .smallHeroText {
-  font-family: "Orbitron", sans-serif;
   font-weight: 100;
   font-size: 4rem;
   color: white;
