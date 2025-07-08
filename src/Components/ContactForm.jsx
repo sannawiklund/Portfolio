@@ -1,12 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import backgroundVideo from '../Assets/typing.mp4';
 import '../ComponentStyling/Contact.css';
 
-
-
 export const ContactForm = () => {
     const form = useRef();
+    const [showModal, setShowModal] = useState(false);
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -24,6 +24,7 @@ export const ContactForm = () => {
                 () => {
                     console.log('SUCCESS!');
                     form.current.reset();
+                    setShowModal(true);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -32,8 +33,24 @@ export const ContactForm = () => {
 
     };
 
+    const closeModal = () => {
+        setShowModal(false);
+        console.log("Closemodal");
+    };
+
+
     return (
         <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-white">
+
+            {showModal && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span onClick={closeModal} className="close">&times;</span>
+                        <p>Thank you for your mail!</p>
+                    </div>
+                </div>
+            )}
+
 
             {/* Background Video */}
             <video
@@ -57,7 +74,7 @@ export const ContactForm = () => {
                         CONTACT ME
                     </h2>
 
-                    <p className="mt-2 text-md text-gray-700" id='contact-text'>
+                    <p className="mt-2 text-md text-[#f3b226]" id='contact-text'>
                         Feel free to reach out – I'll get back to you as soon as I can!
                     </p>
                 </div>

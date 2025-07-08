@@ -22,46 +22,21 @@ a #title {
     text-transform: capitalize;
 }
 
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .floating-link {
-    font-weight: 400;
-    font-size: 1.2rem;
-    color: white;
-    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    color: rgb(255, 255, 255);
 }
 
 .floating-link:hover {
-    color: black;
-}
-
-#github {
-    transition: transform 0.5s;
-    transform-origin: right center;
-}
-#github:hover {
-    transform: scale(1.2) translateX(-5px);
-}
-
-#linkedin {
-    transition: transform 0.5s;
-    transform-origin: left center;
-}
-#linkedin:hover {
-    transform: scale(1.2) translateX(5px);
-}
-
-#resume {
-    transition: transform 0.5s;
-    transform-origin: center bottom;
-}
-#resume:hover {
-    transform: scale(1.2) translateY(-5px);
-}
-
-#location {
-    transition: transform 0.5s;
-    transform-origin: center top;
-}
-#location:hover {
-    transform: scale(1.2) translateY(5px);
+    transform: scale(1.2);
+    color: rgb(255, 191, 40);
 }

@@ -14,11 +14,11 @@ function Projects() {
   // Sample project data
   const projects = [
     { img: k6project, img_alt: "", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
-    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: "" },
-    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: "" },
-    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: "" },
-    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: "" },
-    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: "" }
+    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: null },
+    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: null },
+    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: null },
+    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: null },
+    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: null }
 
   ];
 
@@ -54,15 +54,6 @@ function Projects() {
 
   return (
     <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-zinc-800" id="Projects">
-
-      {/* Background SVG effect
-      <SvgFlux
-        className="absolute inset-0 z-0"
-        gradientRotate="-57"
-        stopColor2="hsl(37, 94%, 54%)"
-        baseFrequency="0.003 0.003"
-      /> */}
-
 
       <div className="relative z-10 text-black text-center">
         <h2 id='project_Title'>PROJECTS</h2>
