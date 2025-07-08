@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from 'react';
 import '../ComponentStyling/Resume.css';
 
@@ -23,7 +24,7 @@ function Resume() {
                         <time className="mb-1 text-sm text-gray-400">Teknikhögskolan Gothenburg | August 2023 - May 2025</time>
                         <h3 className="text-lg font-semibold text-white">Higher Vocational Education (HVE) in .NET development</h3>
                         <p className="text-base text-gray-400">
-                        The education has given me a broad foundation in .NET development, with a focus on full-stack development, agile working methods and modern tools such as Git and CI/CD. Through project work that reflected the industry's requirements, and two longer internship periods (LIA), I have had the opportunity to apply my knowledge in a demanding environment.
+                            The education has given me a broad foundation in .NET development, with a focus on full-stack development, agile working methods and modern tools such as Git and CI/CD. Through project work that reflected the industry's requirements, and two longer internship periods (LIA), I have had the opportunity to apply my knowledge in a demanding environment.
                         </p>
                     </li>
                 </ol>
@@ -72,12 +73,13 @@ function Resume() {
                 </div>
             </div>
 
-            <a
-                href="/"
+            <Link
+                to="/"
                 className="button fixed bottom-6 right-3 bg-transparent text-white px-4 py-2 rounded-full shadow-lg border border-white hover:bg-white hover:text-black transition-all duration-300"
             >
                 Take me home!
-            </a>
+            </Link>
+
         </div>
     );
 }
