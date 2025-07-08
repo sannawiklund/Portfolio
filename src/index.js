@@ -7,7 +7,7 @@ import Resume from "./Pages/Resume";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio">
       <Routes>
         <Route>
           <Route index element={<Home />} />
