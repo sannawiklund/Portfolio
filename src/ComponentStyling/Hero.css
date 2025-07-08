@@ -2,41 +2,66 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-
 #navbar {
   padding-top: 10px;
 }
 
 #navbar-items a {
   color: white;
+  align-items: center;
+  justify-content: center;
 }
 
 #navbar-items a:hover {
   color: rgb(255, 210, 85);
 }
 
+/* Behåll som backup – används ej just nu */
 .bigHeroText {
-  font-size: 30rem;
+  font-size: clamp(8rem, 25vw, 30rem); /* Skala automatiskt beroende på skärm */
   font-weight: 300;
   z-index: -1;
   position: absolute;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
 }
 
+/* Mobilförst – text skalas uppåt för större skärmar */
 .smallHeroText {
   font-weight: 100;
-  font-size: 4rem;
+  font-size: 2rem;
   color: white;
   z-index: 1;
   padding-bottom: 2em;
-
 }
 
+@media (min-width: 640px) {
+  .smallHeroText {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .smallHeroText {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .smallHeroText {
+    font-size: 4rem;
+  }
+}
+
+/* Vertikala ränder */
 .stripe-overlay {
-  background-image: repeating-linear-gradient(to right,
-      rgba(0, 0, 0, 0.2) 0,
-      rgba(0, 0, 0, 0.2) 1px,
-      transparent 1px,
-      transparent 3px);
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2) 0,
+    rgba(0, 0, 0, 0.2) 1px,
+    transparent 1px,
+    transparent 3px
+  );
   background-size: 4px 100%;
   z-index: 0;
 }

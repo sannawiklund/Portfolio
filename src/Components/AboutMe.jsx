@@ -52,9 +52,9 @@ function AboutMe() {
           </div>
 
           {/* Links with icons */}
-          
+
           {/* GitHub */}
-          <div className="icon-wrapper absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full">
+          <div className="icon-wrapper absolute top-1/2 left-2 sm:left-0 transform -translate-y-1/2 -translate-x-full">
             <a
               href="https://github.com/sannawiklund"
               className="floating-link"
@@ -62,12 +62,12 @@ function AboutMe() {
               rel="noopener noreferrer"
               id="github"
             >
-              <FaGithub size={35} />
+              <FaGithub className="text-3xl sm:text-[35px]" />
             </a>
           </div>
 
           {/* LinkedIn */}
-          <div className="icon-wrapper absolute top-1/2 right-[10%] transform -translate-y-1/2 translate-x-full">
+          <div className="icon-wrapper absolute top-1/2 right-2 sm:right-[10%] transform -translate-y-1/2 translate-x-full">
             <a
               href="https://www.linkedin.com/in/sannawiklund/"
               className="floating-link"
@@ -75,12 +75,12 @@ function AboutMe() {
               rel="noopener noreferrer"
               id="linkedin"
             >
-              <FaLinkedin size={35} />
+              <FaLinkedin className="text-3xl sm:text-[35px]" />
             </a>
           </div>
 
           {/* CV */}
-          <div className="icon-wrapper absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-full">
+          <div className="icon-wrapper absolute top-6 sm:top-10 left-1/2 transform -translate-x-1/2 -translate-y-full">
             <a
               href="/Resume"
               className="floating-link"
@@ -88,10 +88,9 @@ function AboutMe() {
               rel="noopener noreferrer"
               id="resume"
             >
-              <FaFileAlt size={35} />
+              <FaFileAlt className="text-3xl sm:text-[35px]" />
             </a>
           </div>
-
 
         </div>
 
