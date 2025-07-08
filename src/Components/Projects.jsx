@@ -5,69 +5,66 @@ import comingSoon from '../Assets/coming_soon.jpg';
 import k6project from '../Assets/K6ResultComparer.jpg';
 import '../ComponentStyling/Projects.css';
 
-
 function Projects() {
+  // Track how many cards to show based on screen width
+  const [numVisible, setNumVisible] = useState(window.innerWidth < 640 ? 1 : 3);
 
-  // Force re-render of the Carousel after page load
-  const [carouselKey, setCarouselKey] = useState(0);
+  // Update numVisible when screen is resized
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobile = window.innerWidth < 640;
+      setNumVisible(isMobile ? 1 : 3);
+    };
 
-  // Sample project data
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Ensure correct initial value
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Example project data
   const projects = [
-    { img: k6project, img_alt: "", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
-    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: null },
-    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: null },
-    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: null },
-    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: null },
-    { img: comingSoon, img_alt: "", name: "PROJECT NAME", link: null }
-
+    { img: k6project, img_alt: "K6 Result Comparer", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
+    { img: comingSoon, img_alt: "Coming Soon", name: "PROJECT NAME", link: null },
+    { img: comingSoon, img_alt: "Coming Soon", name: "PROJECT NAME", link: null },
+    { img: comingSoon, img_alt: "Coming Soon", name: "PROJECT NAME", link: null },
+    { img: comingSoon, img_alt: "Coming Soon", name: "PROJECT NAME", link: null },
+    { img: comingSoon, img_alt: "Coming Soon", name: "PROJECT NAME", link: null }
   ];
 
-  // Template for each card in the carousel
+  // Template for each card
   const projectTemplate = (item) => (
     <div className='card_Container'>
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
-
-        <a target="_blank" href={item.link}>
+        {item.link ? (
+          <a target="_blank" rel="noopener noreferrer" href={item.link}>
+            <img className="w-full h-full" src={item.img} alt={item.img_alt} />
+          </a>
+        ) : (
           <img className="w-full h-full" src={item.img} alt={item.img_alt} />
-        </a>
+        )}
 
         <div className="px-6 py-4">
-
           <div className="mb-2" id='project_Name'>{item.name}</div>
-          {/* <p id='project_Desc'>{item.desc}</p> */}
-
         </div>
-
       </div>
-
     </div>
   );
 
-  // Delay to allow DOM/layout to settle before forcing carousel re-render
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setCarouselKey(1); // Triggers a re-render
-    }, 100);
-
-    return () => clearTimeout(timer); // Cleanup
-  }, []);
-
   return (
     <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-zinc-800" id="Projects">
-
       <div className="relative z-10 text-black text-center">
         <h2 id='project_Title'>PROJECTS</h2>
       </div>
 
-      {/* Carousel wrapper limits overflow and width */}
+      {/* Carousel container */}
       <div className="carousel-wrapper overflow-hidden w-full max-w-[1235px] mx-auto">
         <Carousel
-          key={carouselKey}
           value={projects}
-          numVisible={3}
-          numScroll={3}
+          numVisible={numVisible}
+          numScroll={numVisible}
           itemTemplate={projectTemplate}
-          circular={false} // No infinite loop
+          circular={false}
         />
       </div>
     </div>

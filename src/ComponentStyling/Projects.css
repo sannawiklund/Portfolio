@@ -55,3 +55,27 @@
 .p-icon {
     color: white;
 }
+
+@media (max-width: 640px) {
+  .p-carousel .p-carousel-item {
+    flex: 0 0 100% !important; 
+    justify-content: center;
+  }
+
+  .card_Container {
+    width: 90vw; 
+    margin: 0 auto;
+  }
+
+  .carousel-wrapper {
+    padding: 0 0.5rem;
+  }
+
+  #project_Title {
+    font-size: 2rem;
+  }
+
+  #project_Name {
+    font-size: 1rem;
+  }
+}
