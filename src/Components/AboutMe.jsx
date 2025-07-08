@@ -16,9 +16,9 @@ function AboutMe() {
 
   return (
 
-    <div className="sticky top-0 h-screen w-full flex items-center justify-center bg-zinc-950 overflow-hidden px-4" id='background-container'>
+    <div className="sticky top-0 h-[100vh] flex items-center justify-center bg-zinc-900 overflow-hidden px-4" id='AboutMe'>
 
-      <SvgBlob/>
+      <SvgBlob />
 
       <section className="flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
 
@@ -29,7 +29,7 @@ function AboutMe() {
 
           {/* SVG Blob */}
 
-          <div data-aos="zoom-in">
+          <div>
             <svg className="h-full w-full z-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <pattern id="profilePattern" x="0" y="0" width="1" height="1">
@@ -52,46 +52,47 @@ function AboutMe() {
           </div>
 
           {/* Links with icons */}
-          <a
-            href="https://github.com/sannawiklund"
-            className="floating-link absolute top-1/2 transform -translate-y-1/2"
-            style={{ left: '-40px' }}
-            target="_blank"
-            rel="noopener noreferrer"
-            id='github'
-          >
-            <FaGithub size={35} />
-          </a>
+          
+          {/* GitHub */}
+          <div className="icon-wrapper absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full">
+            <a
+              href="https://github.com/sannawiklund"
+              className="floating-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="github"
+            >
+              <FaGithub size={35} />
+            </a>
+          </div>
 
-          <a
-            href="https://www.linkedin.com/in/sannawiklund/"
-            className="floating-link absolute right-0 top-1/2 transform -translate-y-1/2"
-            style={{ right: '-0px' }}
-            target="_blank"
-            rel="noopener noreferrer"
-            id='linkedin'
-          >
-            <FaLinkedin size={35} />
-          </a>
+          {/* LinkedIn */}
+          <div className="icon-wrapper absolute top-1/2 right-[10%] transform -translate-y-1/2 translate-x-full">
+            <a
+              href="https://www.linkedin.com/in/sannawiklund/"
+              className="floating-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="linkedin"
+            >
+              <FaLinkedin size={35} />
+            </a>
+          </div>
 
-          <a
-            href="/Resume"
-            className="floating-link absolute left-1/2 top-0 transform -translate-x-1/2"
-            target="_blank"
-            rel="noopener noreferrer"
-            id='resume'
-          >
-            <FaFileAlt size={35} />
-          </a>
+          {/* CV */}
+          <div className="icon-wrapper absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-full">
+            <a
+              href="/Resume"
+              className="floating-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="resume"
+            >
+              <FaFileAlt size={35} />
+            </a>
+          </div>
 
-          <a
-            href='https://maps.app.goo.gl/hs4MGQbRe3HDgBWt6'
-            target="_blank"
-            className="floating-link absolute left-1/2 bottom-0 transform -translate-x-1/2"
-            id='location'
-          >
-            <FaMapMarkerAlt size={35} />
-          </a>
+
         </div>
 
         <h4 className="text-2xl" id='my-Title'>FULLSTACK DEVELOPER | .NET</h4>

@@ -24,8 +24,10 @@ function Contact() {
     });
   };
 
+  
+
   return (
-    <div>
+    <div id='Contact'>
       
       <ContactForm />
 

@@ -1,7 +1,6 @@
 /* About Me Styling */
 
 #my-Name {
-    font-family: "Orbitron", sans-serif;
     font-weight: 400;
     font-size: 2rem;
     color: rgb(255, 255, 255);
@@ -9,10 +8,10 @@
 
 
 #my-Title {
-    font-family: "Orbitron", sans-serif;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #ffffff;
+    margin-top: 0;
 }
 
 #my-Title, #my-Name {
@@ -23,55 +22,21 @@ a #title {
     text-transform: capitalize;
 }
 
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .floating-link {
-    font-family: "Orbitron", sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    color: white;
-    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    color: rgb(255, 255, 255);
 }
 
 .floating-link:hover {
-    color: #ffb625;
-}
-
-.text-base:hover {
-    color: #FACC15;
-}
-
-#linkedin {
-    transition: transform .5s;
-    margin: 0 auto;
-}
-#linkedin:hover {
-    color: #13d0ff;
     transform: scale(1.2);
-}
-
-#github {
-    transition: transform .5s;
-    margin: 0 auto;
-}
-#github:hover {
-    color: #a600ff;
-    transform: scale(1.2);
-}
-
-#resume {
-    transition: transform .5s;
-    margin: 0 auto;
-}
-#resume:hover {
-    color: #f687b7;
-    transform: scale(1.2);
-}
-
-#location {
-    transition: transform .5s;
-    margin: 0 auto;
-}
-#location:hover {
-    color: #FACC15;
-    transform: scale(1.2);
+    color: rgb(255, 191, 40);
 }
