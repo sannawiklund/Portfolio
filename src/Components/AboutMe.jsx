@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import '../ComponentStyling/AboutMe.css';
 import SvgBlob from './SvgBlob';
 import profilePicture from '../Assets/ProfilePicture.jpg';
@@ -5,6 +6,7 @@ import { FaGithub, FaLinkedin, FaFileAlt, FaMapMarkerAlt } from 'react-icons/fa'
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";;
+
 
 function AboutMe() {
 
@@ -81,15 +83,14 @@ function AboutMe() {
 
           {/* CV */}
           <div className="icon-wrapper absolute top-6 sm:top-10 left-1/2 transform -translate-x-1/2 -translate-y-full">
-            <a
-              href="/Resume"
+            <Link
+              to="/resume"
               className="floating-link"
-              target="_blank"
-              rel="noopener noreferrer"
               id="resume"
             >
               <FaFileAlt className="text-3xl sm:text-[35px]" />
-            </a>
+            </Link>
+
           </div>
 
         </div>
