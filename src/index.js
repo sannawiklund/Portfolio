@@ -7,12 +7,13 @@ import Resume from "./Pages/Resume";
 
 export default function App() {
   return (
-    <HashRouter basename="/Portfolio">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="resume" element={<Resume />} />
       </Routes>
     </HashRouter>
+
   );
 }
 
