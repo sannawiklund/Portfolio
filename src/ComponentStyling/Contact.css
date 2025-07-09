@@ -43,3 +43,9 @@ textarea {
 .close:focus {
   color: black;
 }
+
+@media (max-width: 640px) {
+  #contact_Wrapper {
+    padding-bottom: 2rem;  
+  }
+}
