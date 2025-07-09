@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://sannawiklund.github.io/Portfolio",
+  "homepage": "https://www.sannawiklund.se",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
