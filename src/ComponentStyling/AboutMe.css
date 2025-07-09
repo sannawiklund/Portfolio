@@ -38,6 +38,6 @@ a #title {
 
 .floating-link:hover {
     transform: scale(1.2);
-    color: rgb(255, 191, 40);
+    color: #4b222e;
 }
 
