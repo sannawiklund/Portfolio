@@ -33,7 +33,7 @@ export const ContactForm = () => {
   const closeModal = () => setShowModal(false);
 
   return (
-    <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-white">
+    <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-white contact_Wrapper">
 
       {/* Success Modal */}
       {showModal && (
@@ -47,7 +47,7 @@ export const ContactForm = () => {
 
       {/* Typing video background */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-[-1] opacity-80"
+        className="absolute top-0 left-0 w-full h-full object-cover z-[-1] opacity-70"
         src={backgroundVideo}
         autoPlay
         loop
@@ -61,7 +61,7 @@ export const ContactForm = () => {
           <h2 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-4xl">
             CONTACT ME
           </h2>
-          <p className="mt-2 text-md text-[#f3b226]" id='contact-text'>
+          <p className="mt-2 text-md text-[#000000]" id='contact-text'>
             Feel free to reach out – I'll get back to you as soon as I can!
           </p>
         </div>
@@ -118,7 +118,7 @@ export const ContactForm = () => {
           <div className="mt-10">
             <button
               type="submit"
-              className="block w-full rounded-md bg-[#f3b226] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#1d1d1d] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="block w-full rounded-md bg-[#000000] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#1d1d1d] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Let's talk
             </button>
