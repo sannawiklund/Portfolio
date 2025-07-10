@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'primereact/carousel';
 import SvgFlux from './SvgFlux';
-import comingSoon from '../Assets/coming_soon.jpg';
-import k6project from '../Assets/K6ResultComparer.jpg';
+// import comingSoon from '../Assets/coming_soon.jpg';
+// import k6project from '../Assets/K6ResultComparer.jpg';
+import desktop from '../Assets/Desktop.png';
+import k6 from '../Assets/k6.png';
+import project from '../Assets/project.png';
 import '../ComponentStyling/Projects.css';
 
 function Projects() {
@@ -24,12 +27,12 @@ function Projects() {
 
   // Example project data
   const projects = [
-    { img: k6project, img_alt: "K6 Result Comparer", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
-    { img: comingSoon, img_alt: "Coming Soon", name: "PROJECT NAME", link: null },
-    { img: comingSoon, img_alt: "Coming Soon", name: "PROJECT NAME", link: null },
-    { img: comingSoon, img_alt: "Coming Soon", name: "PROJECT NAME", link: null },
-    { img: comingSoon, img_alt: "Coming Soon", name: "PROJECT NAME", link: null },
-    { img: comingSoon, img_alt: "Coming Soon", name: "PROJECT NAME", link: null }
+    { img: k6, img_alt: "K6 Result Comparer", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
+    { img: desktop, img_alt: "Desktop presenting my portfolio", name: "PORTFOLIO", link: "https://github.com/sannawiklund/Portfolio" },
+    { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
+    { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
+    { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
+    { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null }
   ];
 
   // Template for each card
