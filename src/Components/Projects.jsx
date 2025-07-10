@@ -27,8 +27,8 @@ function Projects() {
 
   // Example project data
   const projects = [
-    { img: k6, img_alt: "K6 Result Comparer", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
     { img: desktop, img_alt: "Desktop presenting my portfolio", name: "PORTFOLIO", link: "https://github.com/sannawiklund/Portfolio" },
+    { img: k6, img_alt: "K6 Result Comparer", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
     { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
     { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
     { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
