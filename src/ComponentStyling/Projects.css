@@ -12,12 +12,20 @@
 
 }
 
-
 .card_Container:hover {
   transform: scale(0.9); 
   cursor: pointer;
   background-color: #ff359394;
 }
+
+
+.card_Container img {
+  height: 430px; 
+  width: 100%;
+  object-fit: cover;
+}
+
+
 
 #project_Title {
     font-size: 3rem;
@@ -55,6 +63,7 @@
 .p-icon {
     color: white;
 }
+
 
 @media (max-width: 640px) {
   .p-carousel .p-carousel-item {
