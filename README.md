@@ -1,6 +1,6 @@
 # Sanna Wiklund – Portfolio
 
-Welcome to my portfolio website built with **React** and styled using **Tailwind CSS**. This site showcases my projects, design skills, and experiences in a clean and responsive design.
+Welcome to my portfolio website built with **React** and styled using **Tailwind CSS**. 
 The project is hosted via **GitHub Pages**, with a custom domain connected through **One.com**. Deployment is handled automatically using a **CI/CD pipeline via GitHub Actions**.
 
 ## Live Demo
