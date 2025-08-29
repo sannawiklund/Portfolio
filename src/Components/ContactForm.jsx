@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import backgroundVideo from '../Assets/typing.mp4';
 import '../ComponentStyling/Contact.css';
+import SvgBlob from './SvgBlob';
 
 export const ContactForm = () => {
   const form = useRef();
@@ -33,7 +33,7 @@ export const ContactForm = () => {
   const closeModal = () => setShowModal(false);
 
   return (
-    <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-white contact_Wrapper">
+    <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-orange-300 contact_Wrapper">
 
       {/* Success Modal */}
       {showModal && (
@@ -45,15 +45,17 @@ export const ContactForm = () => {
         </div>
       )}
 
-      {/* Typing video background */}
+            <SvgBlob />
+
+      {/* Typing video background
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-[-1] opacity-70"
+        className="absolute top-0 left-0 w-full h-full object-cover z-[-1] opacity-100"
         src={backgroundVideo}
         autoPlay
         loop
         muted
         playsInline
-      />
+      /> */}
 
       {/* Contact form container */}
       <div className="isolate bg-[#ffffffcb] shadow-xl px-6 p-10 sm:py-31 lg:px-8 rounded-xl">
@@ -62,7 +64,9 @@ export const ContactForm = () => {
             CONTACT ME
           </h2>
           <p className="mt-2 text-md text-[#000000]" id='contact-text'>
-            Feel free to reach out – I'll get back to you as soon as I can!
+            Feel free to reach out 
+            <br></br> 
+            I'll get back to you as soon as I can!
           </p>
         </div>
 
