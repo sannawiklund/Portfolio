@@ -18,7 +18,7 @@ function AboutMe() {
 
   return (
 
-    <div className="sticky top-0 h-[100vh] flex items-center justify-center bg-zinc-900 overflow-hidden px-4" id='AboutMe'>
+    <div className="sticky top-0 h-[100vh] flex items-center justify-center bg-neutral-800 overflow-hidden px-4" id='AboutMe'>
 
       <SvgBlob />
 
@@ -29,7 +29,7 @@ function AboutMe() {
         {/* Blob + Floating links wrapper */}
         <div className="relative w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px]">
 
-          {/* SVG Blob */}
+          {/* SVG Circle */}
 
           <div>
             <svg className="h-full w-full z-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -37,26 +37,28 @@ function AboutMe() {
                 <pattern id="profilePattern" x="0" y="0" width="1" height="1">
                   <image
                     x="0"
-                    y="-8"
-                    width="80%"
-                    height="80%"
+                    y="0"
+                    width="160"
+                    height="160"
                     preserveAspectRatio="xMidYMid slice"
                     href={profilePicture}
                   />
                 </pattern>
               </defs>
-              <path
+              <circle
+                cx="100"
+                cy="100"
+                r="80"
                 fill="url(#profilePattern)"
-                d="M40,-62.6C52.2,-54.5,62.5,-43.9,66.9,-31.4C71.3,-18.9,69.6,-4.6,65.9,8.3C62.2,21.1,56.4,32.5,49.2,45.2C42.1,57.9,33.7,72.1,22.2,75.3C10.7,78.5,-3.9,70.7,-14.8,62.1C-25.7,53.5,-32.8,44.1,-44.9,35.8C-57,27.5,-74,20.3,-82.1,7.7C-90.3,-4.8,-89.5,-22.7,-80.8,-34.8C-72,-46.9,-55.2,-53.3,-40.4,-60.2C-25.6,-67,-12.8,-74.3,0.6,-75.2C13.9,-76.1,27.9,-70.6,40,-62.6Z"
-                transform="translate(100 100)"
               />
             </svg>
+
           </div>
 
           {/* Links with icons */}
 
           {/* GitHub */}
-          <div className="icon-wrapper absolute top-1/2 left-2 sm:left-0 transform -translate-y-1/2 -translate-x-full">
+          <div className="icon-wrapper absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-[30%]">
             <a
               href="https://github.com/sannawiklund"
               className="floating-link"
@@ -69,7 +71,7 @@ function AboutMe() {
           </div>
 
           {/* LinkedIn */}
-          <div className="icon-wrapper absolute top-1/2 right-2 sm:right-[10%] transform -translate-y-1/2 translate-x-full">
+          <div className="icon-wrapper absolute top-1/2 right-2 sm:right-[10%] transform -translate-y-1/2 translate-x-[120%]">
             <a
               href="https://www.linkedin.com/in/sannawiklund/"
               className="floating-link"

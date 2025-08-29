@@ -19,9 +19,9 @@ const SvgBlob = ({ top, left, right, bottom, className = '', animationDelay = '0
     >
       <defs>
         <linearGradient id="paint0_linear" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#d1899b" />         {/* Kallrosa */}
-          <stop offset="30%" stopColor="#e8a6d7" />        {/* Lavendel */}
-          <stop offset="55%" stopColor="#B2556F" />        {/* Körsbärsrosa */}
+          <stop offset="40%" stopColor="#E0A71F" />         {/* Kallrosa */}
+          <stop offset="10%" stopColor="#9B3042" />       
+          <stop offset="55%" stopColor="#9B3042" />        {/* Körsbärsrosa */}
           <stop offset="75%" stopColor="#F2C877" />        {/* Gulorange */}
 
         </linearGradient>
