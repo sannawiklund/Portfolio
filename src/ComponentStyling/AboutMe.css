@@ -38,6 +38,18 @@ a #title {
 
 .floating-link:hover {
     transform: scale(1.2);
-    color: #4b222e;
+    color: #c5e3eb;
 }
 
+/* Justeringar för mobil (t.ex. ≤ 400px) */
+@media (max-width: 400px) {
+  /* GitHub-ikonen */
+  #github {
+    transform: translate(-55%, -50%) !important; /* flytta mer åt vänster */
+  }
+
+  /* LinkedIn-ikonen */
+  #linkedin {
+    transform: translate(-55%, -50%) !important; /* flytta mer åt höger */
+  }
+}
