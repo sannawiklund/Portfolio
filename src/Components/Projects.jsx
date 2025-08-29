@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'primereact/carousel';
-import desktop from '../Assets/Desktop.png';
+import desktop from '../Assets/Desktop.webp'; 
 import k6_image from '../Assets/k6_image.png';
 import project from '../Assets/project.png';
 import '../ComponentStyling/Projects.css';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Projects() {
   // Track how many cards to show based on screen width
@@ -40,24 +38,24 @@ function Projects() {
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
         {item.link ? (
           <a target="_blank" rel="noopener noreferrer" href={item.link}>
-            <LazyLoadImage
+            <img
               className="w-full h-full"
               src={item.img}
               alt={item.img_alt}
-              effect="blur"  
             />
           </a>
         ) : (
-          <LazyLoadImage
+          <img
             className="w-full h-full"
             src={item.img}
             alt={item.img_alt}
-            effect="blur"
           />
         )}
 
         <div className="px-6 py-4">
-          <div className="mb-2" id='project_Name'>{item.name}</div>
+          <div className="mb-2" id='project_Name'>
+            {item.name}
+          </div>
         </div>
       </div>
     </div>
