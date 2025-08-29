@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'primereact/carousel';
-import SvgFlux from './SvgFlux';
-// import comingSoon from '../Assets/coming_soon.jpg';
-// import k6project from '../Assets/K6ResultComparer.jpg';
 import desktop from '../Assets/Desktop.png';
-import k6 from '../Assets/k6.png';
+import k6_image from '../Assets/k6_image.png';
 import project from '../Assets/project.png';
 import '../ComponentStyling/Projects.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Projects() {
   // Track how many cards to show based on screen width
@@ -28,7 +27,7 @@ function Projects() {
   // Example project data
   const projects = [
     { img: desktop, img_alt: "Desktop presenting my portfolio", name: "PORTFOLIO", link: "https://github.com/sannawiklund/Portfolio" },
-    { img: k6, img_alt: "K6 Result Comparer", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
+    { img: k6_image, img_alt: "K6 Result Comparer", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
     { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
     { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
     { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
@@ -41,10 +40,20 @@ function Projects() {
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
         {item.link ? (
           <a target="_blank" rel="noopener noreferrer" href={item.link}>
-            <img className="w-full h-full" src={item.img} alt={item.img_alt} />
+            <LazyLoadImage
+              className="w-full h-full"
+              src={item.img}
+              alt={item.img_alt}
+              effect="blur"  
+            />
           </a>
         ) : (
-          <img className="w-full h-full" src={item.img} alt={item.img_alt} />
+          <LazyLoadImage
+            className="w-full h-full"
+            src={item.img}
+            alt={item.img_alt}
+            effect="blur"
+          />
         )}
 
         <div className="px-6 py-4">
@@ -54,8 +63,9 @@ function Projects() {
     </div>
   );
 
+
   return (
-    <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-zinc-800" id="Projects">
+    <div className="sticky top-0 h-[100vh] flex flex-col items-center justify-center bg-neutral-800" id="Projects">
       <div className="relative z-10 text-black text-center">
         <h2 id='project_Title'>PROJECTS</h2>
       </div>
