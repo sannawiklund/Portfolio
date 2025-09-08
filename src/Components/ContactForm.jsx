@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import '../ComponentStyling/Contact.css';
 import SvgBlob from './SvgBlob';
 
+
 export const ContactForm = () => {
   const form = useRef();
   const [showModal, setShowModal] = useState(false);
@@ -45,7 +46,7 @@ export const ContactForm = () => {
         </div>
       )}
 
-            <SvgBlob />
+      <SvgBlob />
 
       {/* Typing video background
       <video
@@ -64,8 +65,8 @@ export const ContactForm = () => {
             CONTACT ME
           </h2>
           <p className="mt-2 text-md text-[#000000]" id='contact-text'>
-            Feel free to reach out 
-            <br></br> 
+            Feel free to reach out
+            <br></br>
             I'll get back to you as soon as I can!
           </p>
         </div>
@@ -130,6 +131,7 @@ export const ContactForm = () => {
         </form>
       </div>
     </div>
+    
   );
 };
 
