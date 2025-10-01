@@ -48,16 +48,6 @@ export const ContactForm = () => {
 
       <SvgBlob />
 
-      {/* Typing video background
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-[-1] opacity-100"
-        src={backgroundVideo}
-        autoPlay
-        loop
-        muted
-        playsInline
-      /> */}
-
       {/* Contact form container */}
       <div className="isolate bg-[#ffffffcb] shadow-xl px-6 p-10 sm:py-31 lg:px-8 rounded-xl">
         <div className="mx-auto max-w-2xl text-center">
