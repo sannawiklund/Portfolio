@@ -63,7 +63,7 @@ function Resume() {
                         <time className="mb-1 text-sm text-neutral-400">Webmind, Gothenburg | October 2024 – May 2025</time>
                         <h3 className="text-lg font-semibold text-white">Junior Developer - Internship</h3>
                         <p className="text-base text-neutral-400">
-                            As part of my education I had the privilege of spending a few months at Webmind, an Umbraco-based web agency. During my internship, I was an active part of the development team, working with both frontend and backend to develop customized Umbraco websites in .NET environments.
+                            As part of my education I had the privilege of spending a few months at Webmind, an Umbraco-based web agency. During my internship and contributed to both frontend and backend development of custom Umbraco websites, gaining hands-on experience with CMS integration, cloud hosting and agile collaboration.
                         </p>
                     </li>
 
@@ -73,7 +73,7 @@ function Resume() {
                         <time className="mb-1 text-sm text-neutral-400">Teknikhögskolan Gothenburg | August 2023 - May 2025</time>
                         <h3 className="text-lg font-semibold text-white">Higher Vocational Education (HVE) in .NET development</h3>
                         <p className="text-base text-neutral-400">
-                            The education has given me a broad foundation in .NET development, with a focus on full-stack development, agile working methods and modern tools such as Git and CI/CD. Through project work that reflected the industry's requirements, and two longer internship periods (LIA), I have had the opportunity to apply my knowledge in a demanding environment.
+                            The education has given me a strong foundation in .NET development, with a focus on full-stack development, agile working methods and modern tools such as Git and CI/CD. I have also gained experience in frontend development with React and Tailwind, as well as backend development with ASP.NET and Entity Framework. 
                         </p>
                     </li>
                 </ol>
