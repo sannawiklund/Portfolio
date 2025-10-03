@@ -319,7 +319,7 @@ export const StaggeredMenu = ({
         <button
           ref={toggleBtnRef}
           className="sm-toggle relative inline-flex items-center gap-[0.3rem] bg-transparent border-0 cursor-pointer 
-          font-medium leading-none overflow-visible p-5 text-3xl"      
+          font-medium leading-none overflow-visible p-5 text-3xl"
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
           aria-controls="staggered-menu-panel"
@@ -402,16 +402,29 @@ export const StaggeredMenu = ({
               {items && items.length ? (
                 items.map((it, idx) => (
                   <li className="sm-panel-itemWrap relative overflow-hidden leading-none pa" key={it.label + idx}>
-                    <a
-                      className="sm-panel-item relative text-black font-semibold text-[4rem] cursor-pointer leading-none tracking-[-2px] uppercase transition-[background,color] duration-150 ease-linear inline-block no-underline pr-[1.4em]"
-                      href={it.link}
-                      aria-label={it.ariaLabel}
-                      data-index={idx + 1}
-                    >
-                      <span className="sm-panel-itemLabel inline-block [transform-origin:50%_100%] will-change-transform">
-                        {it.label}
-                      </span>
-                    </a>
+                    {it.onClick ? (
+                      <button
+                        className="sm-panel-item relative text-black font-semibold text-[4rem] cursor-pointer leading-none tracking-[-2px] uppercase transition-[background,color] duration-150 ease-linear inline-block no-underline pr-[1.4em] bg-transparent border-0"
+                        aria-label={it.ariaLabel}
+                        data-index={idx + 1}
+                        onClick={() => {
+                          it.onClick();
+                          setOpen(false); // stäng menyn efter klick
+                        }}
+                      >
+                        <span className="sm-panel-itemLabel">{it.label}</span>
+                      </button>
+                    ) : (
+                      <a
+                        className="sm-panel-item relative text-black font-semibold text-[4rem] cursor-pointer leading-none tracking-[-2px] uppercase transition-[background,color] duration-150 ease-linear inline-block no-underline pr-[1.4em]"
+                        href={it.link}
+                        aria-label={it.ariaLabel}
+                        data-index={idx + 1}
+                      >
+                        <span className="sm-panel-itemLabel">{it.label}</span>
+                      </a>
+                    )}
+
                   </li>
                 ))
               ) : (
@@ -470,7 +483,7 @@ export const StaggeredMenu = ({
 
 /* fixed header for the toggle button: move to top-left and add left/top padding */
 .staggered-menu-header-fixed {
-  position: fixed;
+  position: absolute;
   top: env(safe-area-inset-top, 1rem);
   left: env(safe-area-inset-left, 1rem);
   right: auto;
