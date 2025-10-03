@@ -17,9 +17,9 @@ function Hero() {
 
     const menuItems = [
         { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
-        { label: 'Resume', ariaLabel: 'View my resume', link: '#/resume' },
         { label: 'About', ariaLabel: 'About Me', onClick: () => scrollToSection("AboutMe") },
         { label: 'Projects', ariaLabel: 'View my projects', onClick: () => scrollToSection("Projects") },
+        { label: 'Experience', ariaLabel: 'View my resume', link: '#/resume' },
         { label: 'Contact', ariaLabel: 'Get in touch', onClick: () => scrollToSection("Contact") }
     ];
 

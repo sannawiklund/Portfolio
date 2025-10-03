@@ -65,6 +65,7 @@ function AboutMe() {
               target="_blank"
               rel="noopener noreferrer"
               id="github"
+              aria-label="Visit my GitHub profile"
             >
               <FaGithub className="text-3xl sm:text-[35px]" />
             </a>
@@ -78,6 +79,7 @@ function AboutMe() {
               target="_blank"
               rel="noopener noreferrer"
               id="linkedin"
+              aria-label="Visit my LinkedIn profile"
             >
               <FaLinkedin className="text-3xl sm:text-[35px]" />
             </a>
@@ -89,6 +91,7 @@ function AboutMe() {
               to="/resume"
               className="floating-link"
               id="resume"
+              aria-label="View my resume"
             >
               <FaFileAlt className="text-3xl sm:text-[35px]" />
             </Link>
