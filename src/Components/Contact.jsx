@@ -25,7 +25,7 @@ function Contact() {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 z-20 right-3 bg-transparent text-white px-4 py-2 rounded-full shadow-lg border border-white hover:shadow-xl transition-all duration-300"
+          className="fixed bottom-4 z-20 right-3 bg-transparent text-white px-4 py-2 rounded-full shadow-lg border border-white  hover:bg-white hover:text-black transition-all duration-300"
         >
           ↑ Top
         </button>
