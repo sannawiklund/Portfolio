@@ -8,18 +8,22 @@ import Footer from '../Components/Footer';
 export default function Home() {
   return (
 
-    <div className="portfolioContainer scroll-smooth" >
+    <div className="portfolioContainer scroll-smooth">
+      <Hero />
 
-      <Hero></Hero>
+      <section id="AboutMe">
+        <AboutMe />
+      </section>
 
-      <AboutMe></AboutMe>
+      <section id="Projects">
+        <Projects />
+      </section>
 
-      <Projects></Projects>
+      <section id="Contact">
+        <Contact />
+      </section>
 
-      <Contact></Contact>
-
-      <Footer></Footer>
-
+      <Footer />
     </div>
 
   )

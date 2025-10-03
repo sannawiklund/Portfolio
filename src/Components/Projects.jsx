@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'primereact/carousel';
-import desktop from '../Assets/Desktop.webp'; 
-import k6_image from '../Assets/k6_image.png';
+import desktop from '../Assets/portfolio.webp'; 
+import k6_image from '../Assets/k6_image.webp';
 import project from '../Assets/project.png';
 import '../ComponentStyling/Projects.css';
 
