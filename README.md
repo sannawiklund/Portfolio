@@ -11,6 +11,7 @@ The project is hosted via **GitHub Pages**, with a custom domain connected throu
 ## Tech Stack
 
 - **React 19**
+- **Vite /**
 - **Tailwind CSS**
 - **GitHub Actions** for CI/CD
 - **GitHub Pages** for hosting
@@ -27,7 +28,6 @@ The project is hosted via **GitHub Pages**, with a custom domain connected throu
 - Fully responsive layout
 - Smooth scroll animations
 - Interactive contact form with email functionality
-- Parallax and AOS animations for enhanced UX
 - CI/CD deployment via GitHub Actions
 - Git-based deployment workflow
 - Custom domain via One.com
