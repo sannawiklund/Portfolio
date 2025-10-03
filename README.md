@@ -15,8 +15,7 @@ The project is hosted via **GitHub Pages**, with a custom domain connected throu
 - **Tailwind CSS**
 - **GitHub Actions** for CI/CD
 - **GitHub Pages** for hosting
-- **PrimeReact** for UI components
-- **AOS (Animate on Scroll)** for scroll animations
+- **PrimeReact, ShadCn & React-Bits** for UI components
 - **EmailJS** for sending emails from the contact form
 - **React Router v7** for routing
 - **React Scroll** for scroll effects
