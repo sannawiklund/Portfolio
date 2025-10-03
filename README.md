@@ -11,7 +11,7 @@ The project is hosted via **GitHub Pages**, with a custom domain connected throu
 ## Tech Stack
 
 - **React 19**
-- **Vite /**
+- **Vite 7**
 - **Tailwind CSS**
 - **GitHub Actions** for CI/CD
 - **GitHub Pages** for hosting
