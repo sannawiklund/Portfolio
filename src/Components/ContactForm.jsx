@@ -1,7 +1,9 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../ComponentStyling/Contact.css';
-import SvgBlob from './SvgBlob';
+import BackgroundAnimation from './BackgroundAnimation';
+import TextType from '../Components/TextType';
+
 
 
 export const ContactForm = () => {
@@ -46,19 +48,28 @@ export const ContactForm = () => {
         </div>
       )}
 
-      <SvgBlob />
+      <BackgroundAnimation />
 
       {/* Contact form container */}
       <div className="isolate bg-[#ffffffcb] shadow-xl px-6 p-10 sm:py-31 lg:px-8 rounded-xl">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-4xl">
+
+          <h2 className="text-4xl pt-5 font-bold tracking-tight text-neutral-800 sm:text-4xl">
             CONTACT ME
           </h2>
-          <p className="mt-2 text-md text-[#000000]" id='contact-text'>
-            Feel free to reach out
-            <br></br>
-            I'll get back to you as soon as I can!
-          </p>
+
+          <TextType
+            text={["Feel free to reach out ...", "I'll get back to you as soon as I can!"]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="|"
+            deletingSpeed={20}
+            loop={true}
+            className="text-xl font-normal text-neutral-800 pt-4"
+            textColors={['#302b2a', '#302b2a']}
+          />
+
         </div>
 
         {/* EmailJS Form */}
@@ -67,9 +78,9 @@ export const ContactForm = () => {
           onSubmit={sendEmail}
           className="mx-auto mt-16 max-w-xl sm:mt-20"
         >
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2" id='form_Container'>
+          <div className="grid grid-cols-1 gap-x-5 gap-y-2 sm:grid-cols-2" id='form_Container'>
             <div>
-              <label htmlFor="user_name" className="block text-sm font-semibold text-gray-900">Name</label>
+              <label htmlFor="user_name" className="block text-m font-semibold text-gray-900">Name</label>
               <div className="mt-2.5">
                 <input
                   type="text"
@@ -83,7 +94,7 @@ export const ContactForm = () => {
             </div>
 
             <div className="sm:col-span-2">
-              <label htmlFor="user_email" className="block text-sm font-semibold text-gray-900">Email</label>
+              <label htmlFor="user_email" className="block text-m font-semibold text-gray-900">Email</label>
               <div className="mt-2.5">
                 <input
                   type="email"
@@ -97,7 +108,7 @@ export const ContactForm = () => {
             </div>
 
             <div className="sm:col-span-2">
-              <label htmlFor="message" className="block text-sm font-semibold text-gray-900">Message</label>
+              <label htmlFor="message" className="block text-m font-semibold text-gray-900">Message</label>
               <div className="mt-2.5">
                 <textarea
                   name="message"
@@ -121,7 +132,7 @@ export const ContactForm = () => {
         </form>
       </div>
     </div>
-    
+
   );
 };
 

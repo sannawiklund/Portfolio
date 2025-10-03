@@ -16,16 +16,7 @@
   color: rgb(255, 210, 85);
 }
 
-/* Behåll som backup – används ej just nu */
-.bigHeroText {
-  font-size: clamp(8rem, 25vw, 30rem);
-  /* Skala automatiskt beroende på skärm */
-  font-weight: 300;
-  z-index: -1;
-  position: absolute;
-  color: rgba(255, 255, 255, 0.05);
-  pointer-events: none;
-}
+
 
 /* Mobilförst – text skalas uppåt för större skärmar */
 .smallHeroText {
@@ -61,13 +52,3 @@
   }
 }
 
-/* Vertikala ränder */
-.stripe-overlay {
-  background-image: repeating-linear-gradient(to right,
-      rgba(0, 0, 0, 0.2) 0,
-      rgba(0, 0, 0, 0.2) 1px,
-      transparent 1px,
-      transparent 3px);
-  background-size: 4px 100%;
-  z-index: 0;
-}

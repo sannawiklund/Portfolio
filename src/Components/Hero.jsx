@@ -23,6 +23,7 @@ function Hero() {
         { label: 'Contact', ariaLabel: 'Get in touch', onClick: () => scrollToSection("Contact") }
     ];
 
+
     const socialItems = [
 
         { label: 'GitHub', link: 'https://github.com/sannawiklund' },
@@ -33,7 +34,7 @@ function Hero() {
     return (
         <div className="relative h-screen flex flex-col">
             <BackgroundAnimation />
-            <div className="absolute inset-0 z-0 pointer-events-none stripe-overlay"></div>
+            <div className="absolute inset-0 z-0 pointer-events-none"></div>
 
             {/* Staggered Menu Container - Needs to be at the top level z-index for the button */}
             <div className="absolute top-0 right-0 w-full h-full z-50">
