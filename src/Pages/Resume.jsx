@@ -24,14 +24,14 @@ function Resume() {
                         className="text-2xl font-semibold text-white"
                     />
                     <p className="text-base text-neutral-200 mt-2 text-balance">
-                        I have loved digital creation for as long as I can remember. I’ve always been the person with a camera in hand, capturing memories, friends, and strangers along the way. At a young age I also discovered blogging, and with it my first glimpse into CSS and HTML.
+                        I have loved digital creation for as long as I can remember. I’ve always been the person with a camera in hand, capturing memories, friends, and strangers along the way. At a young age I also discovered blogging and with it my first glimpse into CSS and HTML.
 
-                        When it became time for high school, the natural choice was to continue exploring creativity and digital expression. I enrolled at NTI Media High School in Gothenburg where I specialized in photographic imagery and graphic design.
+                        When it became time for high school the natural choice was to continue exploring creativity and digital expression. I enrolled at NTI Media High School in Gothenburg where I specialized in photographic imagery and graphic design.
 
                         <br /><br />
-                        Over the years, I have done everything from driving forklifts to working in restaurants before finding my way to Telia where I spent nearly six year working with incident and customer management.
-                        Eventually I took on the role of improvement ambassador, and in this role I focused on process improvements, internal tools, and customer-facing routines. This is where I realized how much I enjoyed problem-solving, efficiency, and structure, not just in theory but in practice.
-                        It was during this time that I decided to fully pursue programming, a path that allowed me to combine all the things I love: problem-solving, structure, creativity, and digital creation. I began my education in .NET development at Teknikhögskolan in Gothenburg.
+                        Over the years I have done everything from driving forklifts to working in restaurants before finding my way to Telia where I spent nearly six year working with incident and customer management.
+                        Eventually I took on the role of improvement ambassador for my segment at Telia, and in this role I focused on process-improvements, internal tools and customer-facing routines. This is where I realized how much I enjoyed problem-solving, efficiency, and structure, not just in theory but also in practice.
+                        It was during this time that I decided to fully pursue programming, a path that allowed me to combine all the things I love: problem-solving, structure, creativity and digital creation. In August 2023 I finally began my education in .NET development at Teknikhögskolan in Gothenburg, and now I am excited to embark on this new chapter as a junior developer!
 
                     </p>
 
