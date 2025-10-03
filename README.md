@@ -11,11 +11,11 @@ The project is hosted via **GitHub Pages**, with a custom domain connected throu
 ## Tech Stack
 
 - **React 19**
+- **Vite 7**
 - **Tailwind CSS**
 - **GitHub Actions** for CI/CD
 - **GitHub Pages** for hosting
-- **PrimeReact** for UI components
-- **AOS (Animate on Scroll)** for scroll animations
+- **PrimeReact, ShadCn & React-Bits** for UI components
 - **EmailJS** for sending emails from the contact form
 - **React Router v7** for routing
 - **React Scroll** for scroll effects
@@ -27,7 +27,6 @@ The project is hosted via **GitHub Pages**, with a custom domain connected throu
 - Fully responsive layout
 - Smooth scroll animations
 - Interactive contact form with email functionality
-- Parallax and AOS animations for enhanced UX
 - CI/CD deployment via GitHub Actions
 - Git-based deployment workflow
 - Custom domain via One.com
