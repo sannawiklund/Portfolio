@@ -6,17 +6,25 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Resume from "./Pages/Resume";
 import './index.css';
+import ContactFormModal from "./Components/ContactFormModal";
+import { ContactProvider } from "./Context/ContactContext";
 
 
 function App() {
   return (
-    <HashRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="resume" element={<Resume />} />
-      </Routes>
-    </HashRouter>
+    <ContactProvider>
+      <HashRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="resume" element={<Resume />} />
+        </Routes>
+
+        <ContactFormModal />
+        
+      </HashRouter>
+    </ContactProvider>
+
   );
 }
 
