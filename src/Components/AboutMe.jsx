@@ -2,35 +2,31 @@ import { Link } from "react-router-dom";
 import '../ComponentStyling/AboutMe.css';
 import SvgBlob from './SvgBlob';
 import profilePicture from '../Assets/ProfilePicture.jpg';
-import { FaGithub, FaLinkedin, FaFileAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa';
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";;
-
+import "aos/dist/aos.css";
+import ContactFormModal from "./ContactFormModal";
+import { useContact } from "../Context/ContactContext";
 
 function AboutMe() {
+
+  const { setIsOpen } = useContact(); 
 
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
 
-
   return (
-
     <div className="sticky top-0 h-[100vh] flex items-center justify-center bg-neutral-800 overflow-hidden px-4" id='AboutMe'>
-
       <SvgBlob />
 
       <section className="flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
-
-        <h3 className="text-4xl font-bold text-white" id='my-Name'>SANNA WIKLUND</h3>
+        <h3 className="z-10 text-4xl font-bold text-white" id='my-Name'>SANNA WIKLUND</h3>
 
         {/* Blob + Floating links wrapper */}
         <div className="relative w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px]">
-
-          {/* SVG Circle */}
-
           <div>
             <svg className="h-full w-full z-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <defs>
@@ -45,17 +41,9 @@ function AboutMe() {
                   />
                 </pattern>
               </defs>
-              <circle
-                cx="100"
-                cy="100"
-                r="80"
-                fill="url(#profilePattern)"
-              />
+              <circle cx="100" cy="100" r="80" fill="url(#profilePattern)" />
             </svg>
-
           </div>
-
-          {/* Links with icons */}
 
           {/* GitHub */}
           <div className="icon-wrapper absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-[30%]">
@@ -95,16 +83,24 @@ function AboutMe() {
             >
               <FaFileAlt className="text-3xl sm:text-[35px]" />
             </Link>
-
           </div>
-
         </div>
 
-        <h4 className="text-2xl" id='my-Title'>FULLSTACK DEVELOPER | .NET</h4>
+        <h4 className="text-2xl z-10" id='my-Title'>FULLSTACK DEVELOPER | .NET</h4>
 
+        <div className="z-10 flex items-center space-x-2 text-white" aria-label="Contact Form Modal">
+          <button
+            onClick={() => setIsOpen(true)}
+            className="bg-[#5b8794] hover:bg-[#8ca8af] text-white font-bold py-2 px-4 rounded"
+          >
+            Click me if you want to get in touch!
+          </button>
+        </div>
       </section>
-    </div>
 
+      {/* Modal-component with state from Context */}
+      <ContactFormModal />
+    </div>
   );
 }
 

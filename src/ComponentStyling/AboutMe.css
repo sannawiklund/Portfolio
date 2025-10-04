@@ -14,9 +14,6 @@
     margin-top: 0;
 }
 
-#my-Title, #my-Name {
-    z-index: 1;
-}
 
 a #title {
     text-transform: capitalize;

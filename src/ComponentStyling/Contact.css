@@ -10,42 +10,27 @@ textarea {
 .modal {
   display: block;
   position: fixed;
-  z-index: 50;
   left: 50%;
-  top: 30%;
+  top: 50%;
   transform: translate(-50%, -30%);
-  width: 30%;
+  width: 30%; /* default for desktop */
   height: auto;
   border-radius: 10px;
+  padding: 1.5rem; 
 }
 
-/* Modal content */
-.modal-content {
-  background-color: #fefefe;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 10px;
-  width: 80%;
-  margin: auto;
-  text-align: center;
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+  .modal {
+    width: 60%;
+    padding: 2rem;
+  }
 }
 
-/* Close button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-}
-
-@media (max-width: 640px) {
-  #contact_Wrapper {
-    padding-bottom: 2rem;  
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .modal {
+    width: 90%;
+    padding: 2rem;
   }
 }
