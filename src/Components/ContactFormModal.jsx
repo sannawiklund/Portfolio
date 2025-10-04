@@ -28,7 +28,7 @@ function ContactFormModal() {
 
     return (
         <div>
-            {/* Success Modal - Top-level, alltid ovanpå */}
+            {/* Success Modal */}
             {showModal && (
                 <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/20">
                     <div className="bg-sky-50 p-6 sm:p-8 md:p-10 rounded-md shadow-xl relative w-11/12 sm:w-96">
@@ -45,13 +45,6 @@ function ContactFormModal() {
                 </div>
             )}
 
-            {/* Open Button */}
-            <button
-                onClick={() => setIsOpen(true)}
-                className="bg-[#5b8794] hover:bg-[#8ca8af] text-white font-bold py-2 px-4 rounded"
-            >
-                Click me if you want to get in touch!
-            </button>
 
             {/* Contact Modal */}
             {isOpen && (
