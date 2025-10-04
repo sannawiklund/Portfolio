@@ -31,7 +31,7 @@ function Resume() {
                         <br /><br />
                         Over the years I have done everything from driving forklifts to working in restaurants before finding my way to Telia where I spent nearly six year working with incident and customer management.
                         Eventually I took on the role of improvement ambassador for my segment at Telia, and in this role I focused on process-improvements, internal tools and customer-facing routines. This is where I realized how much I enjoyed problem-solving, efficiency, and structure, not just in theory but also in practice.
-                        It was during this time that I decided to fully pursue programming, a path that allowed me to combine all the things I love: problem-solving, structure, creativity and digital creation. In August 2023 I finally began my education in .NET development at Teknikhögskolan in Gothenburg, and now I am excited to embark on this new chapter as a junior developer!
+                        It was during this time that I decided to fully pursue programming, a path that allowed me to combine all the things I love: problem-solving, creativity and digital creation. In August 2023 I finally began my education in .NET development at Teknikhögskolan in Gothenburg, and now I am excited to embark on this new chapter as a junior developer!
 
                     </p>
 
@@ -47,7 +47,7 @@ function Resume() {
                     />
 
                     <p className="text-base text-neutral-200 mt-2 ">
-                        Looking ahead, I see a future where I can continue to grow as a developer. I am eager to take on new challenges, learn new technologies, and contribute to exciting projects. My goal is to become a well-rounded developer who can work across the entire stack, and who can contribute to both technical solutions and user experiences.
+                        Looking ahead, I see a future where I will continue to grow as a developer. I am eager to take on new challenges, learn new technologies, and contribute to exciting projects. My goal is to become a well-rounded developer who can work across the entire stack, and who can contribute to both technical solutions and creative user experiences.
 
                         <br></br>
                         <br></br>

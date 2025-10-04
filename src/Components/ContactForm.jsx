@@ -4,8 +4,6 @@ import '../ComponentStyling/Contact.css';
 import BackgroundAnimation from './BackgroundAnimation';
 import TextType from '../Components/TextType';
 
-
-
 export const ContactForm = () => {
   const form = useRef();
   const [showModal, setShowModal] = useState(false);
