@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'primereact/carousel';
-import desktop from '../Assets/portfolio.webp'; 
-import k6_image from '../Assets/k6_image.webp';
-import project from '../Assets/project.png';
+import desktop from '../Assets/Portfolio.png';
+import k6_image from '../Assets/GrafanaLabs.jpeg';
+// import project from '../Assets/project.png';
 import '../ComponentStyling/Projects.css';
+import Alkion from '../Assets/Alkion.png';
 
 function Projects() {
   // Track how many cards to show based on screen width
@@ -24,12 +25,11 @@ function Projects() {
 
   // Example project data
   const projects = [
-    { img: desktop, img_alt: "Desktop presenting my portfolio", name: "PORTFOLIO", link: "https://github.com/sannawiklund/Portfolio" },
-    { img: k6_image, img_alt: "K6 Result Comparer", name: "K6 RESULT COMPARER", link: "https://github.com/sannawiklund/K6ResultComparer" },
-    { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
-    { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
-    { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null },
-    { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null }
+    { img: Alkion, img_alt: "Alkion Technologies", name: "Website for Alkion Technologies", link: "https://www.alkiontech.com/" },
+    { img: desktop, img_alt: "Desktop presenting my portfolio", name: "My Portfolio", link: "https://www.sannawiklund.se/" },
+    { img: k6_image, img_alt: "K6 Result Comparer", name: "K6 Result Comparer", link: "https://github.com/sannawiklund/K6ResultComparer" },
+    // { img: project, img_alt: "Coming Soon", name: "PROJECT ", link: null },
+    // { img: project, img_alt: "Coming Soon", name: "PROJECT COMING SOON", link: null }
   ];
 
   // Template for each card
