@@ -11,7 +11,7 @@ import { useContact } from "../Context/ContactContext";
 
 function AboutMe() {
 
-  const { setIsOpen } = useContact(); 
+  const { setIsOpen } = useContact();
 
   useEffect(() => {
     AOS.init();
@@ -19,28 +19,30 @@ function AboutMe() {
   }, []);
 
   return (
-    <div className="sticky top-0 h-[100vh] flex items-center justify-center bg-neutral-800 overflow-hidden px-4" id='AboutMe'>
+    <div className="sticky top-0 flex items-center justify-center bg-neutral-800 overflow-hidden p-12" id='AboutMe'>
       <SvgBlob />
 
       <section className="flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
         <h3 className="z-10 text-4xl font-bold text-white" id='my-Name'>SANNA WIKLUND</h3>
 
         {/* Blob + Floating links wrapper */}
-        <div className="relative w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px]">
+        <div className="relative w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px]">
           <div>
             <svg className="h-full w-full z-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <pattern id="profilePattern" x="0" y="0" width="1" height="1">
+                {/* Vi sätter patternContentUnits till objectBoundingBox för enklare skalning */}
+                <pattern id="profilePattern" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
                   <image
                     x="0"
                     y="0"
-                    width="160"
-                    height="160"
+                    width="1"
+                    height="1" // Sätt till 1 (100%) för att matcha pattern
                     preserveAspectRatio="xMidYMid slice"
                     href={profilePicture}
                   />
                 </pattern>
               </defs>
+              {/* Cirkeln använder nu mönstret som skalar sig efter cirkelns storlek */}
               <circle cx="100" cy="100" r="80" fill="url(#profilePattern)" />
             </svg>
           </div>
